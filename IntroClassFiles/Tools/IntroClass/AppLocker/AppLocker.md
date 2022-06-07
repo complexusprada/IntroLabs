@@ -36,7 +36,7 @@ Please note the IP address of your Ethernet adapter.
 
 
 
-Please note that my adaptor is called eth0 and my IP address is 172.26.19.133.   Your IP Address and adapter name may be different.
+Please note that my adaptor is called eth0 and my IP address is 172.26.141.20.   Your IP Address and adapter name may be different.
 
 Please note your IP address for the ADHD Linux system on a piece of paper:
 
