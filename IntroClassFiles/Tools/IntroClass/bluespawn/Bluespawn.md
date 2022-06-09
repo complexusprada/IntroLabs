@@ -39,7 +39,7 @@ Now, let’s use Atomic Red Team to test the monitoring with BlueSpawn:
 
 First, we need to open a PowerShell Prompt:
 
-![](attachments/Clipboard_2020-06-16-09-55-12.png)
+![](attachments/powershell.png)
 
 Next, in the PowerShell Window we need to navigate to the Atomic Red Team directory and import the powershell modules:
 
