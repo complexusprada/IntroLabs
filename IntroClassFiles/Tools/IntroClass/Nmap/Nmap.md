@@ -29,7 +29,7 @@ Please note your IP for your WSL address.  Mine is 172.26.176.1.  Yours will be 
 Now, let’s try and scan your Windows system from Ubuntu.  To do this open a Ubuntu command prompt:
 
 ![](attachments/Clipboard_2020-06-17-08-32-51.png)
-![](AppLocker/../attachments/Clipboard_2020-06-17-08-32-51.png)
+![](../AppLocker/attachments/Clipboard_2020-06-17-08-32-51.png)
 
 Next, let’s become root:
 
