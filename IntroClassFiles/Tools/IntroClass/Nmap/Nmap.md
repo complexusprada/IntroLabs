@@ -9,7 +9,7 @@ Remember, treat your internal network as hostile, because it is.
 
 Let's get started by opening a Terminal as Administrator:
 
-![](attachments/Clipboard_2020-06-12-10-36-44.png.png)
+![](attachments/Clipboard_2020-06-12-10-36-44.png)
 
 Now, let's open a command Prompt:
 
