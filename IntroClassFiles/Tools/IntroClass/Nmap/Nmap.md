@@ -9,11 +9,11 @@ Remember, treat your internal network as hostile, because it is.
 
 Let's get started by opening a Terminal as Administrator:
 
-![](../AppLocker/attachments/cmd-command-prompt.png)
+![](attachments/Clipboard_2020-06-12-10-36-44.png.png)
 
 Now, let's open a command Prompt:
 
-![](attachments/Clipboard_2020-06-16-09-53-18.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 From the command prompt we need to get the IP address of your Windows system:
 
