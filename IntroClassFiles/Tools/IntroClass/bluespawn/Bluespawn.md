@@ -28,7 +28,7 @@ Now, let's open a command Prompt:
 ![](../AppLocker/attachments/cmd-command-prompt.png)
 
 Next, let’s change directories to tools and start Bluespawn:
-C:\Users\adhd>`cd \tools`
+C:\Users\CLabs>`cd \tools`
 
 C:\tools>`BLUESPAWN-client-x64.exe --monitor --level Cursory`
 
@@ -43,11 +43,11 @@ First, we need to open a PowerShell Prompt:
 
 Next, in the PowerShell Window we need to navigate to the Atomic Red Team directory and import the powershell modules:
 
-PS C:\Users\adhd> `cd C:\AtomicRedTeam\invoke-atomicredteam\`
+PS C:\Users\CLabs> `cd C:\AtomicRedTeam\invoke-atomicredteam\`
 
 Then, install the proper yaml modules
 
-PS C:\Users\adhd> `Install-Module -Name powershell-yaml`
+PS C:\Users\CLabs> `Install-Module -Name powershell-yaml`
 
 PS C:\AtomicRedTeam\invoke-atomicredteam> `Import-Module .\Invoke-AtomicRedTeam.psm1`
 
