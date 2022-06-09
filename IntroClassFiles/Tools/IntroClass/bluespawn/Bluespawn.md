@@ -26,6 +26,7 @@ Let's get started by opening a Terminal as Administrator:
 Now, let's open a command Prompt:
 
 ![](attachments/Clipboard_2020-06-16-09-53-18.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 Next, let’s change directories to tools and start Bluespawn:
 C:\Users\adhd>`cd \tools`
