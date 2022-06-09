@@ -39,7 +39,7 @@ When you get the pop up select Yes.
 Next, to open a Command Prompt Window, select the Down Carrot ![](attachments/Clipboard_2020-06-12-10-38-20.png) and then select Command Prompt.
 
 ![](attachments/Clipboard_2020-06-12-10-38-52.png)
-![](../AppLocker/attachments/cmd-command-prompt.png.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 Now, we will need to navigate to the cd \tools\volatility_2.6_win64_standalone directory
 
