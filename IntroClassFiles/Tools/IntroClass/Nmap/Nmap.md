@@ -58,7 +58,7 @@ It should look like this:
 
 Now, let’s rescan from Linux.  Please select the Ubuntu tab:
 
-![](attachments/Clipboard_2020-07-07-15-32-44.png)
+![](../AppLocker/attachments/Clipboard_2020-06-17-08-32-51.png)
 
 Then, rerun the scan
 
