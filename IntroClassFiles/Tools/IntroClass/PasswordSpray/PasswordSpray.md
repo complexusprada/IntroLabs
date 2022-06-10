@@ -38,17 +38,28 @@ It should look like this:
 
 ![](attachments/Clipboard_2020-06-16-10-37-09.png)
 
-Next we are going to try authenticate against SMB (port 445) which we know is open by the results of previous NMAP scan.
-For now lets transfer a list of usernames to our kali machine by netcat. To do it we need the ip of our machine and run the next commands.
+Next we are going to password spray against SMB (port 445) which we know is open by the results of previous NMAP scan.
+For now lets transfer a list of usernames to our kali machine by netcat. To do it we need the ip of our machine and run the next commands. Cancel out netcat (Ctrl-C) after 3 seconds.
 
 ![](attachments/kali-netcat.png)
 
+Now switch to command prompt on windows machine. 
 
-PS C:\Tools> `Invoke-LocalPasswordSpray -Password Winter2020`
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
-It should look like this:
+Disable firewall.
 
-![](attachments/Clipboard_2020-07-09-15-06-52.png)
+![](../AppLocker/attachments/disable-firewall.png)
+
+And transfer the file to kali.
+
+![](attachments/win-netcat.png)
+
+We will use the tool CrackMapExec for password spray attack over smb. The tool supports other protocols like ssh, winrm, ldap etc. The command looks like this - `cme smb <IP> -u users -p Winter2020 --shares`.
+
+![](attachments/cme-result.png)
+
+We can see that the user Cristopher was succesfully authenticated to our target machine.
 
 Now we need to clean up and make sure the system is ready for the rest of the labs:
 
