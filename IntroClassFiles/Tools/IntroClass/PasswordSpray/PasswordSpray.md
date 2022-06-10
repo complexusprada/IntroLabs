@@ -25,7 +25,7 @@ It should look like this:
 
 ![](attachments/Clipboard_2020-06-16-10-26-22.png)
 
-Now, we will need to start PowerShell to run DumpUsers.ps1. For simplicity, we will use the script that gets a list of usernames from the windows host.
+Now, we will need to start PowerShell to run DumpUsers.ps1. For simplicity, we will use the script that gets a list of usernames from the windows host and saves it to the C:\temp\UserList.txt file.
 
 
 C:\Tools> `powershell`
@@ -38,7 +38,10 @@ It should look like this:
 
 ![](attachments/Clipboard_2020-06-16-10-37-09.png)
 
-Now, let’s try some password spraying against the local system!
+Next we are going to try authenticate against SMB (port 445) which we know is open by the results of previous NMAP scan.
+For now lets transfer a list of usernames to our kali machine by netcat. To do it we need the ip of our machine and run the next commands.
+
+![](attachments/kali-netcat.png)
 
 
 PS C:\Tools> `Invoke-LocalPasswordSpray -Password Winter2020`
