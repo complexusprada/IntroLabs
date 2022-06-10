@@ -41,7 +41,7 @@ It should look like this:
 Next we are going to password spray against SMB (port 445) which we know is open by the results of previous NMAP scan.
 For now lets transfer a list of usernames to our kali machine by netcat. To do it we need the ip of our machine and the following command.
 
-`nc -lv -p 2222 > users`
+`sudo nc -lv -p 2222 > users` (pass:clabs)
 
 ![](attachments/kali-netcat.png)
 
