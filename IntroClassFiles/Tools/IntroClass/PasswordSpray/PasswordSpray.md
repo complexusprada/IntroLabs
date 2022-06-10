@@ -25,14 +25,14 @@ It should look like this:
 
 ![](attachments/Clipboard_2020-06-16-10-26-22.png)
 
-Now, we will need to start PowerShell to run LocalPasswordSpray
+Now, we will need to start PowerShell to run DumpUsers.ps1. For simplicity, we will use the script that gets a list of usernames from the windows host.
 
 
 C:\Tools> `powershell`
 
 PS C:\Tools> `Set-ExecutionPolicy Unrestricted`
 
-PS C:\Tools> `Import-Module .\LocalPasswordSpray.ps1`
+PS C:\Tools> `.\DumpUsers.ps1`
 
 It should look like this:
 
