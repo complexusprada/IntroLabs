@@ -46,7 +46,7 @@ It should look like this:
 
 Now, let’s go back to the Windows command prompt, by selecting the Administrator: Command Prompt tab.
 
-![](attachments/Clipboard_2020-07-07-15-31-07.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 Now, let’s disable the Windows firewall:
 
