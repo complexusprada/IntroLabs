@@ -32,7 +32,7 @@ On your Linux system, please run the following command:
 
 Please note the IP address of your Ethernet adapter. 
 
-Please note that my adapter is called eth0 and my IP address is 172.26.19.133.   
+Please note that my adapter is called eth0 and my IP address is 172.29.2.155.   
 
 Your IP Address and adapter name may be different.
 
