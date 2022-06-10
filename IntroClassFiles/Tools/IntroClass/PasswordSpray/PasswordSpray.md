@@ -15,7 +15,7 @@ Let's get started by opening a Terminal as Administrator
 
 Now, let's open a command Prompt:
 
-![](attachments/cmd-command-prompt.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 C:\Windows\system32> `cd \tools`
 
