@@ -21,7 +21,7 @@ When you get the pop up select Yes.
 
 Next, to open a Command Prompt Window, select the Down Carrot and then select Command Prompt.
 
-![](attachments/Clipboard_2020-06-12-10-38-52.png)
+![](../AppLocker/attachments/Clipboard_2020-06-17-08-32-51.png)
 
 Next, we need to navigate to the hashcat directory.
 
