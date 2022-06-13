@@ -57,9 +57,8 @@ We can see that the password was cracked (clabs).
 
 # Mitigation methods
 
-## Disable LLMNR with Active Directory GPO:
+## Disable LLMNR with Local Group Policy editor:
 
-Active Directory has a GPO you can configure to prevent its domain workstations from using LLMNR.
 
 Use Local Group Policy editor by running gpedit.msc and modifying the policy.
 
@@ -78,3 +77,16 @@ See screenshots below
 `REG ADD  "HKLM\Software\policies\Microsoft\Windows NT\DNSClient"`
 
 `REG ADD  "HKLM\Software\policies\Microsoft\Windows NT\DNSClient" /v  "EnableMulticast" /t REG_DWORD /d "0" /f`
+
+## Disable NBT-NS
+
+Disabling LLMNR is not enough, the reason is that if windows sees that LLMNR protocol is not available, it automatically falls over to NBT-NS.
+We can disable it accordingly:
+
+1.Open network connection properties
+2.Select TCP/IPv4 and open its properties
+3.Click Advanced, then go to WINS tab and select Disable NetBIOS over TCP
+4.Save the changes.
+
+![](attachments/disable-netbios.png)
+
