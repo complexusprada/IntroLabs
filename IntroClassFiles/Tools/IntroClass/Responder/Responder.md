@@ -63,7 +63,7 @@ Active Directory has a GPO you can configure to prevent its domain workstations 
 
 Create a New or Update an existing Group Policy and Edit accordingly:
 
-`Computer Configuration` -> `Administrative Templates` -> `Network` -> `DNS Client Enable Turn Off Multicast Name Resolution policy` by changing its value to `Enabled`
+`Computer Configuration` -> `Administrative Templates` -> `Network` -> `DNS Client` Enable `Turn Off Multicast Name Resolution policy` by changing its value to `Enabled`
 
 See screenshots below, essentially this operation is the same as using the Local Security Policy editor, with exception of making the modification on a Group Policy.
 
