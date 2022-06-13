@@ -28,32 +28,31 @@ root@DESKTOP-I1T2G01:~# `cd /opt/Responder/`
 
 And let’s start Responder:
 
-root@DESKTOP-I1T2G01:/opt/Responder# `./Responder.py -I eth0`
+root@DESKTOP-I1T2G01:/opt/Responder# `responder -v -I eth0`
 
-![](attachments/Clipboard_2020-06-23-14-22-03.png)
+![](attachments/responder-on.png)
 
-Now, let's go back to your Windows system and open Windows Explorer and put in the string \\\Noooo into the address bar.
+Now, let's go back to your Windows system and open Windows Explorer and put in the string \\NonExistent into the address bar.
 
-![](attachments/Clipboard_2020-06-23-14-22-57.png)
+![](attachments/Non-Existent.png)
 
 Give it a few moments and you should see some capture data showing up.  Please note there may be an error.  That is OK.
 
-
-![](attachments/Clipboard_2020-06-23-14-22-23.png)
+![](attachments/responder-hash.png)
 
 Next we need to kill Responder with Ctrl + c.  This will return the command prompt. 
 
 Now, we need to change to the logs directory.
 
-root@DESKTOP-I1T2G01:/opt/Responder# `cd logs/`
+root@DESKTOP-I1T2G01:/opt/Responder# `cd /usr/share/responder/logs`
 
 Once there, we will need to start John The Ripper"
 
-root@DESKTOP-I1T2G01:/opt/Responder/logs# `/opt/JohnTheRipper/run/john --format=netntlmv2 ./HTTP-NTLMv2-172.26.16.1.txt`
-Remember!  Your IP will be different!!!!
+root@DESKTOP-I1T2G01:/usr/share/responder/logs# `john --format=netntlmv2 SMB-NTLMv2-SSP-fe80\:\:2524\:e51e\:966\:e42f.txt`
+Remember!  Your IPv6 will be different!!!!
 
-![](attachments/Clipboard_2020-06-23-14-24-11.png)
+![](attachments/john.png)
 
-You should see the Windows password be cracked very quickly.  
+We can see that the password was cracked (clabs).   
 
 
