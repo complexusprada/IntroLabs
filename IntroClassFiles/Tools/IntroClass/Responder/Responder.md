@@ -55,7 +55,7 @@ Remember!  Your IPv6 will be different!!!!
 
 We can see that the password was cracked (clabs).
 
-#Mitigation methods
+# Mitigation methods
 
 Disable LLMNR with Active Directory GPO:
 
