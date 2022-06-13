@@ -57,7 +57,7 @@ We can see that the password was cracked (clabs).
 
 # Mitigation methods
 
-# Disable LLMNR with Active Directory GPO:
+## Disable LLMNR with Active Directory GPO:
 
 Active Directory has a GPO you can configure to prevent its domain workstations from using LLMNR.
 
