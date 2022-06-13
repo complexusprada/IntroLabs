@@ -84,11 +84,21 @@ Disabling LLMNR is not enough, the reason is that if windows sees that LLMNR pro
 We can disable it accordingly:
 
 1.Open network connection properties
-2.Select TCP/IPv4 and open its properties
-3.Click Advanced, then go to WINS tab and select Disable NetBIOS over TCP
-4.Save the changes.
 
 ![](attachments/netbios-part-2.png)
+
+2.Select TCP/IPv4 and open its properties
+
 ![](attachments/netbios-part-3.png)
+
+3.Click Advanced, then go to WINS tab and select Disable NetBIOS over TCP
+
 ![](attachments/netbios-part-4.png)
+
+4.Save the changes.
+
+
+
+
+
 
