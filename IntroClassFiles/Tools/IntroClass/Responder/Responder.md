@@ -61,19 +61,13 @@ We can see that the password was cracked (clabs).
 
 Active Directory has a GPO you can configure to prevent its domain workstations from using LLMNR.
 
+Use Local Group Policy editor by running gpedit.msc and modifying the policy.
+
 Create a New or Update an existing Group Policy and Edit accordingly:
 
 `Computer Configuration` -> `Administrative Templates` -> `Network` -> `DNS Client` Enable `Turn Off Multicast Name Resolution policy` by changing its value to `Enabled`
 
-See screenshots below, essentially this operation is the same as using the Local Security Policy editor, with exception of making the modification on a Group Policy.
-
-Disable LLMNR with Local Group Policy (Windows 7,8,10 Pro)
-
-Use Local Group Policy editor by running gpedit.msc and modifying the policy.
-
-`Computer Configuration` -> `Administrative Templates` -> `Network` -> `DNS Client`
-
-Enable Turn Off Multicast Name Resolution policy by changing its value to `Enabled`
+See screenshots below
 
 ![](attachments/disable-active-1.png)
 
