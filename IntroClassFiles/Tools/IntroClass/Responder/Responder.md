@@ -85,13 +85,13 @@ We can disable it accordingly:
 
 1.Open network connection properties
 
-![](attachments/netbios-part-2.png)
-
 2.Select TCP/IPv4 and open its properties
 
-![](attachments/netbios-part-3.png)
+![](attachments/netbios-part-2.png)
 
 3.Click Advanced, then go to WINS tab and select Disable NetBIOS over TCP
+
+![](attachments/netbios-part-3.png)
 
 ![](attachments/netbios-part-4.png)
 
