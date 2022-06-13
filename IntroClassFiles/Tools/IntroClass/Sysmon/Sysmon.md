@@ -78,7 +78,7 @@ It should look like this:
 
 Next, to open a Command Prompt Window, select the Down Carrot ![](attachments\Clipboard_2020-06-12-10-38-20.png) and then select Command Prompt.
 
-![](attachments/Clipboard_2020-06-12-10-38-52.png)
+![](../AppLocker/attachments/cmd-command-prompt.png)
 
 Then, type the following:
 
