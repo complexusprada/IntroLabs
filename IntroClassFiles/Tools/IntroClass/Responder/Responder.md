@@ -88,5 +88,7 @@ We can disable it accordingly:
 3.Click Advanced, then go to WINS tab and select Disable NetBIOS over TCP
 4.Save the changes.
 
-![](attachments/disable-netbios.jpg)
+![](attachments/netbios-part-2.png)
+![](attachments/netbios-part-3.png)
+![](attachments/netbios-part-4.png)
 
