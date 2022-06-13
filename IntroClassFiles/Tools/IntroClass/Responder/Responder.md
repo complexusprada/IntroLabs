@@ -76,4 +76,5 @@ See screenshots below
 ## Disable LLMNR with Command Line (Single Workstation, Windows 7,8,10 Home)
 
 `REG ADD  "HKLM\Software\policies\Microsoft\Windows NT\DNSClient"`
+
 `REG ADD  "HKLM\Software\policies\Microsoft\Windows NT\DNSClient" /v  "EnableMulticast" /t REG_DWORD /d "0" /f`
