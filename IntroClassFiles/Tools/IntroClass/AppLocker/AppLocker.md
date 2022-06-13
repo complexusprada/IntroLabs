@@ -22,7 +22,7 @@ Let’s get started by opening a Terminal as Administrator
 
 When you get the User Account Control Prompt, select Yes.
 
-And, open a Ubuntu command prompt:
+And, open a Kali command prompt:
 
 ![](attachments/Clipboard_2020-06-17-08-32-51.png)
 
