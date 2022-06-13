@@ -74,11 +74,7 @@ It should look like this:
 
 ![](../AppLocker/attachments/Clipboard_2020-06-12-12-46-10.png)
 
-Now, we will need to open an cmd.exe terminal as Administrator.
 
-![](../AppLocker/attachments/cmd-command-prompt.png)
-
-When you get the pop up select Yes.
 
 Next, to open a Command Prompt Window, select the Down Carrot ![](attachments\Clipboard_2020-06-12-10-38-20.png) and then select Command Prompt.
 
