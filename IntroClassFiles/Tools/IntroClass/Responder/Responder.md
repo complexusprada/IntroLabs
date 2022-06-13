@@ -16,7 +16,7 @@ When you get the User Account Control Prompt, select Yes.
 
 And, open a Ubuntu command prompt:
 
-![](attachments/Clipboard_2020-06-17-08-32-51.png)
+![](../AppLocker/attachments/Clipboard_2020-06-17-08-32-51.png)
 
 Next, let’s become root:
 
