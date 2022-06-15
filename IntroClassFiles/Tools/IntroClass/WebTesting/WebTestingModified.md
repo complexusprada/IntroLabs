@@ -7,5 +7,9 @@ While a full intro to web attacks is out of the scope of this class, it is great
 Let’s get started by opening a Docker Desktop as Administrator
 
 ![](attachments/docker-desktop.png)
+
+In menu tab select `Images`
 ![](attachments/docker-desktop-1.png)
+
+You will see the image called `bkimminich/juice-shop`, click the button `RUN` and set the port on local host section to 80.
 ![](attachments/docker-desktop-2.png)
