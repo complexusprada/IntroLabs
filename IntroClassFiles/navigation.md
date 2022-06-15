@@ -30,7 +30,7 @@
  - [RITA](Tools/IntroClass/RITA/RITA.md)
  - [Sysmon](Tools/IntroClass/Sysmon/Sysmon.md)
  - [Web Testing](Tools/IntroClass/WebTesting/WebTesting.md)
- - .[Web Testing Modified](Tools/IntroClass/WebTesting/WebTestingModified.md)
+ - [Web Testing Modified](Tools/IntroClass/WebTesting/WebTestingModified.md)
 
   
 [Cyber Deception/Active Defense]()
