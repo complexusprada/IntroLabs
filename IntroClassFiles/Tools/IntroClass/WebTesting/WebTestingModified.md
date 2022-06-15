@@ -27,4 +27,6 @@ Lets switch over to Kali to do some automatic scans with Nikto and see how many 
 Run the next command `nikto -host http://172.25.144.1` (Your ip will be different). We can see that it detected the url path named `/ftp` that contains valuable information, other than that false positives are rampant.
 
 ![](attachments/nikto.png)
+
+Next, let's try to poke around the application with BurpSuite by itercepting requests and check manually for some vulnerabilties.
   
