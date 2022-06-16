@@ -30,4 +30,23 @@ Run the next command `nikto -host http://172.25.144.1` (Your ip will be differen
 
 ![](attachments/nikto.png)
 
-Next, let's try to poke around the application with BurpSuite by itercepting requests and check manually for some vulnerabilties.
+Next, let's try to poke around the application with BurpSuite by itercepting requests and checking manually for some vulnerabilties.
+
+Open BurpSuite:
+
+![](attachments/burp-open.png)
+
+Select `Temporary project` and click `Next`
+
+![](attachments/burp-tempor.png)
+
+Select ` Use Burp defaults` click `Next` again
+
+![](attachments/burp-defaults.png)
+
+First you need to configure the scope domain for intercepting requests. In our case it is the ip of vulnerable application. To configure it go to the tab `Target` and select the subsection `Scope`.
+
+Select `Use advanced scope control`. Next click `Add` and write down the ip of windows machine. The port is `80`.
+
+![](attachments/burp-target.png)
+
