@@ -68,6 +68,15 @@ Let's first enable BurpSuite's interception. By going to `Proxy` -> `Intercept` 
 
 ![](attachments/burp-interceptor-btn.png)
 
+Now you can go to the login page. Enter any username and password to the input fields, then click `Login` button.
+
+![](attachments/juicy-test-login.png)
+
+Switch over to BurpSuite. You will see the itercepted request. Once you have the request intercepted, we can do our bruteforce attack. To do it right click over the intercepted request and send click `Send to Intruder`
+
+![](attachments/burp-interceptor.png)
+
+
 
 
 
