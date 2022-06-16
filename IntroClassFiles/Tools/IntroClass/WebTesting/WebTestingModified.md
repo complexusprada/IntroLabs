@@ -18,7 +18,9 @@ Get the ip address, note that your ip will be different
 
 ![](attachments/ipconfig.png)
 
-Lets check that Juicy Shop is running by going to the address http://172.25.144.1/score-board. You will see a list of vulnerabilities sorted by difficulty.
+Lets check that Juicy Shop is running by going to the address http://172.25.144.1/#/score-board. You will see a list of vulnerabilities sorted by difficulty.
+
+![](attachments/juicy-shop.png)
   
 Lets switch over to Kali to do some automatic scans with Nikto and see how many vulnerabilties it can detect.
 
