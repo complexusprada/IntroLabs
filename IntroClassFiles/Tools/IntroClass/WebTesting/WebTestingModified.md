@@ -31,4 +31,3 @@ Run the next command `nikto -host http://172.25.144.1` (Your ip will be differen
 ![](attachments/nikto.png)
 
 Next, let's try to poke around the application with BurpSuite by itercepting requests and check manually for some vulnerabilties.
-  
