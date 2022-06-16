@@ -18,7 +18,7 @@ Get the ip address, note that your ip will be different
 
 ![](attachments/ipconfig.png)
 
-Lets check that Juicy Shop is running by going to the address http://172.25.144.1/#/score-board. You will see a list of vulnerabilities sorted by difficulty.
+Lets check that Juicy Shop is running by going to the address http://172.25.144.1/#/score-board. You will see a list of vulnerabilities sorted by difficulty. Actually finding a score-board page is one of the challenges of the application. Some challenges have tutorials that provide solutions, if you want to learn more about vulnerabilties and how to solve them in OWASP Juicy Shop, then the website https://pwning.owasp-juice.shop/ has great tutorials that explain in detail challenges present in the application.
 
 ![](attachments/juicy-shop.png)
   
@@ -30,7 +30,9 @@ Run the next command `nikto -host http://172.25.144.1` (Your ip will be differen
 
 ![](attachments/nikto.png)
 
-Next, let's try to poke around the application with BurpSuite by itercepting requests and checking manually for some vulnerabilties.
+Next, let's try to poke around the application with BurpSuite by itercepting requests and checking manually for some vulnerabilties. 
+
+We will try to bruteforce usernames for common password lists obtained from SecLists. The password list `best1050.txt` is used for simplicity.
 
 Open BurpSuite:
 
@@ -49,4 +51,25 @@ First you need to configure the scope domain for intercepting requests. In our c
 Select `Use advanced scope control`. Next click `Add` and write down the ip of windows machine. The port is `80`.
 
 ![](attachments/burp-target.png)
+
+Now target set, we can open the BurpSuite's built in browser for intercepting requests. To do it go to `Proxy` tab and click the subsection `Intercept`.
+
+![](attachments/burp-browser.png)
+
+Once the browser opens, we can go to the login page.
+
+Click the `Login` button.
+
+![](attachments/juicy-login.png)
+
+You will be redirected to the login page. For now you can enter anything into the username and password input, but don't click the login button.
+
+Let's first enable BurpSuite's interception. By going to `Proxy` -> `Intercept` and click `Intercept is off` button.
+
+![](attachments/burp-interceptor-btn.png)
+
+
+
+
+
 
