@@ -56,9 +56,11 @@ Now target set, we can open the BurpSuite's built in browser for intercepting re
 
 ![](attachments/burp-browser.png)
 
-Once the browser opens, we can go to the login page.
+Once the browser opens, let's go to the Juicy Shop and poke around the application. Let's see the details about Apple Juice by clicking it. Once clicked, pop up window will be opened with reviews section. By expanding it we can see the admin's email address. Later we are going to need it for our brute force attack.  
 
-Click the `Login` button.
+![](attachments/juicy-admin-login.png)
+
+Next, Click the `Login` button.
 
 ![](attachments/juicy-login.png)
 
@@ -75,6 +77,30 @@ Now you can go to the login page. Enter any username and password to the input f
 Switch over to BurpSuite. You will see the itercepted request. Once you have the request intercepted, we can do our bruteforce attack. To do it right click over the intercepted request and send click `Send to Intruder`
 
 ![](attachments/burp-interceptor.png)
+
+Once the request is in intruder, we have to clear automaticaly selected payload positions by clicking `clear` button on the right side.
+
+![](attachments/burp-intruder-clear.png)
+
+With default positions cleared, lets enter previously found admin's email address into the email field. For password field, we are going to add a payload marker by selecting contents of password field and clicking `Add` button. Final result should look like this:
+
+![](attachments/burp-intruder-add.png)
+
+Now we need to select our payload, by going to `Payload` tab and under the section `Payload Options` click `Load` button. For payload we are going to use SecList's `best1050`. The path for payload resides in `C:\tools\best1050`. After selecting the payload, we can now start the attack by clicking `Start Attack` located on the right side.
+
+![](attachments/burp-intruder-payload.png)
+
+
+After clicking `Start Attack` new intruder window opens with requests being sent for each password in payload. We can notice that most of them have the status code of 401 which indicates failed authorization. Anything other than 401 status code is intersting to us. After waiting a little we can see that 117's request gave status code of 200.
+
+![](attachments/burp-success-1.png)
+
+
+If we look into the response of request. We can see that server issued JWT Token which is later used for authorization whenever we send request to the application.
+
+
+![](attachments/burp-success-2.png)
+
 
 
 
