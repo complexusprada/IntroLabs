@@ -6,7 +6,7 @@ In this lab we are going to look at some logs that are generated in a domain pas
 We will start by using DeepBlueCLI, then move into looking directly at the event logs themselves.
 
 First, we will need to extract the event logs for a domain attack.  To do this, simply navigate to 
-the C:\IntroLabs directory:
+the C:\Clabs directory:
 
 ![](attachments/Clipboard_2020-12-13-09-57-36.png)
 
